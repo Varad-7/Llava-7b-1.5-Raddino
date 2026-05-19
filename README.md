@@ -421,7 +421,7 @@ huggingface-cli login
 | `prepare_data.py` | **NEW** — Reads CSV + images, creates train/val/test JSON splits |
 | `raddino_encoder.py` | RAD-DINO vision encoder wrapper (frozen, 768-dim output) |
 | `model.py` | Full LLaVA-RADDino model with projector and LLM |
-| `dataset.py` | IU-Xray data loading with flexible JSON format support |
+| `dataset.py` | Xray data loading with flexible JSON format support |
 | `train.py` | Two-stage training (projector alignment → LoRA fine-tuning) |
 | `inference.py` | Test-set inference with metric computation |
 | `metrics.py` | BLEU (1-4) and ROUGE (1, 2, L) computation |
