@@ -28,20 +28,6 @@ Vicuna-7B LLM (LoRA fine-tuned)     →  Generated Report
 
 ---
 
-## Your Data Structure
-
-```
-IU-Xray/
-├── datasets/raddar/chest-xrays-indiana-university/versions/2/
-│   └── images/images_normalized/
-│       ├── 106_IM-0042-1001.dcm.png     ← UID=106
-│       ├── 106_IM-0042-2001.dcm.png     ← UID=106 (second view)
-│       ├── 107_IM-0049-1001.dcm.png     ← UID=107
-│       ├── 107_IM-0049-2001.dcm.png     ← UID=107
-│       └── ...
-└── processed_indiana_reports.csv         ← UID → report mapping
-```
-
 **Image naming:** `{UID}_IM-{XXXX}-{XXXX}.dcm.png`  
 **UID** = first number in filename (e.g., `106`, `107`, `108`)
 
@@ -52,7 +38,7 @@ IU-Xray/
 ### Step 0: Connect to Server
 
 ```bash
-# SSH into your remote server with A6000
+# SSH into your remote server with gpu
 ssh your_username@your_server_ip
 
 # Start a tmux session (persists if SSH disconnects)
