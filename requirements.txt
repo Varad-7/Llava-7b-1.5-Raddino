@@ -1,0 +1,12 @@
+torch>=2.1.0
+transformers>=4.36.0
+peft>=0.7.0
+accelerate>=0.25.0
+bitsandbytes>=0.42.0
+Pillow>=10.0.0
+nltk>=3.8
+rouge-score>=0.1.2
+tqdm>=4.65.0
+torchvision>=0.16.0
+sentencepiece>=0.1.99
+protobuf>=3.20.0
